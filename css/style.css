@@ -1,2 +1,117 @@
 /* GRID */
+
 /* gridwrapper, grid-header, grid-nav, grid-content, grid-aside, grid-footer */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* GRID */
+
+.gridwrapper {
+    display: grid;
+    grid-template-rows: 3fr 0.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "headergrid headergrid headergrid" 
+        "navgrid navgrid navgrid" 
+        "contentgrid contentgrid contentgrid" 
+        "asidegrid asidegrid asidegrid" 
+        "gallerygrid gallerygrid gallerygrid"
+        "footergrid footergrid footergrid";
+}
+
+.grid-header {
+    grid-area: headergrid;
+    text-align: center;
+    background-image: url(../images/Forside_NorsmindeFiskehus.jpg);
+    background-size: cover;
+    
+}
+
+.grid-content {
+    grid-area: contentgrid;
+    margin: 0px 10%;
+}
+
+.grid-content img {
+    float: left;
+}
+
+.grid-content h2 {
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+.grid-content p {
+    margin: 2px auto;
+}
+
+.grid-aside {
+    grid-area: asidegrid;
+    background-color: #C0D7EF;
+}
+
+.grid-aside h3, ul {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.grid-gallery {
+    grid-area: gallerygrid;
+    float: left;
+}
+
+.grid-gallery img {
+    width: 33%;
+    margin: 5px 0px;
+}
+
+.grid-footer {
+    grid-area: footergrid;
+    padding: 0px 20px;
+}
+
+/* NAV */
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #003758;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size 14px;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    border-bottom: 3px solid red;
+}
+
+nav a:active {
+    border-bottom: 3px solid red;
+}
+
+footer {
+    overflow: hidden;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.payment img {
+    display: inline-block;
+    vertical-align: middle;
+}
