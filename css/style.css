@@ -1,6 +1,3 @@
-/* GRID */
-
-/* gridwrapper, grid-header, grid-nav, grid-content, grid-aside, grid-footer */
 
 * {
     margin: 0;
@@ -13,55 +10,76 @@ body {
 }
 
 /* GRID */
-
 .gridwrapper {
     display: grid;
-    grid-template-rows: 3fr 0.2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
     grid-template-areas: 
-        "headergrid headergrid headergrid" 
-        "navgrid navgrid navgrid" 
-        "contentgrid contentgrid contentgrid" 
-        "asidegrid asidegrid asidegrid" 
-        "gallerygrid gallerygrid gallerygrid"
-        "footergrid footergrid footergrid";
+        "headergrid" 
+        "navgrid" 
+        "contentgrid"
+        "asidegrid" 
+        "gallerygrid"
+        "footergrid";
 }
 
+/* GRID Header */
 .grid-header {
     grid-area: headergrid;
-    text-align: center;
-    background-image: url(../images/Forside_NorsmindeFiskehus.jpg);
-    background-size: cover;
-    
 }
 
+.forsidebillede img{
+    width: 100%;
+}
+
+.grid-nav{
+    grid-area: navgrid;
+    text-align: center;
+}
+
+/* GRID Content */
 .grid-content {
     grid-area: contentgrid;
-    margin: 0px 10%;
+    margin: 0px;
 }
 
-.grid-content img {
+/* Content - index.html */
+.content img {
     float: left;
 }
 
-.grid-content h2 {
+.content h2 {
     text-align: center;
     padding: 0 0 10px 0;
 }
 
-.grid-content p {
+.content p {
     margin: 2px auto;
 }
 
+/* Content - kontakt.html */
+.kontakt {
+    background-color: #C0D7EF;
+    padding: 75px 10px;
+    margin: 
+}
+
+/* GRID Aside */
 .grid-aside {
     grid-area: asidegrid;
+}
+
+.asidecontent h3 {
+    padding: 0px 0 50px 0;
+}
+
+.asidecontent {
+    text-align: center;
+    padding: 75px 0px;
     background-color: #C0D7EF;
 }
 
-.grid-aside h3, ul {
-    text-align: center;
-    padding: 20px 0px;
-}
-
+/* GRID Galleri */
 .grid-gallery {
     grid-area: gallerygrid;
     float: left;
@@ -72,6 +90,7 @@ body {
     margin: 5px 0px;
 }
 
+/* GRID Footer */
 .grid-footer {
     grid-area: footergrid;
     padding: 8% 0px 0px 20px;
