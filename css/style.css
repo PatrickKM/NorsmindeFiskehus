@@ -74,7 +74,10 @@ body {
 
 .grid-footer {
     grid-area: footergrid;
-    padding: 0px 20px;
+    padding: 8% 0px 0px 20px;
+    position: relative;
+    background-image: url(../images/waterwave.png);
+    background-size: cover;
 }
 
 /* NAV */
