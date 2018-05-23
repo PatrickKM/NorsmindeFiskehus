@@ -9,6 +9,7 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
 
     <title>Norsminde Fiskehus - Forside</title>
     <meta name="description" content="Norsminde Fiskehusets hjemmeside, find kontaktoplysninger, adresse samt åbningstider. Ugens tilbud, menukort og salg af fisk">
@@ -20,23 +21,50 @@
             <nav class="grid-nav">
                 <a href="#">Menu</a>
                 <a href="#">Opskrifter</a>
-                <a href="index.html"><img src="images/NorsmindeFiskehus_logo.png" alt="Norsminde Fiskehusets Logo" width="150px"></a>
+                <a href="index.html" class="nohover"><img src="images/NorsmindeFiskehus_logo.png" alt="Norsminde Fiskehusets Logo" width="150px"></a>
                 <a href="#">Om Os</a>
-                <a href="#">Kontakt</a>
+                <a href="kontakt.html" class="active">Kontakt</a>
             </nav>
         </header>
 
         <section class=grid-content>
+
             <div class="kontakt">
-                <h2>Her finder du os</h2>
-                <p>Norsminde Fiskehus Gl. Krovej 1A 8300 Odder </p>
-                <br>
-                <p>Tlf: 2555 5203</p>
-                <br>
-                <p>Mail: Norsmindefiskehus@gmail.com</p>
+                <div class="kontaktform">
+                    <form action="action_page.php">
+
+                        <label for="fname">Navn</label>
+                        <input type="text" id="fname" name="firstname">
+
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="lastname">
+
+                        <label for="lname">Telefon</label>
+                        <input type="text" id="lname" name="lastname">
+
+                        <label for="subject">Emne</label>
+                        <textarea id="subject" name="subject" style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+                <div class="findos">
+                    <h2>Her finder du os</h2>
+                    <p>Norsminde Fiskehus Gl. Krovej 1A <br>8300 Odder </p>
+                    <br>
+                    <p>Tlf: 2555 5203</p>
+                    <br>
+                    <p>Mail: Norsmindefiskehus@gmail.com</p>
+                </div>
             </div>
         </section>
-
+        
+        <aside class="grid-aside">
+            <div class="mapheight"></div>
+        </aside>
+        <div id="map"></div> 
+        
         <footer class="grid-footer">
             <div class="waterwave">
                 <h3>Kontakt</h3>
@@ -55,7 +83,17 @@
         </footer>
     </div>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(56.022600,10.262500),
+                zoom: 17,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
 </body>
 

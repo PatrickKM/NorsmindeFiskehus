@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'chalk_dashregular';
+    src: url('chalk_dash-webfont.woff2') format('woff2'),
+    url('chalk_dash-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'graham_hand_regular';
+    src: url('grahamhand-webfont.woff2') format('woff2'),
+    url('grahamhand-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kg_ten_thousand_reasonsRg';
+    src: url('kgtenthousandreasons-webfont.woff2') format('woff2'),
+    url('kgtenthousandreasons-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('lato-light-webfont.woff2') format('woff2'),
+    url('lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latomedium';
+    src: url('lato-medium-webfont.woff2') format('woff2'),
+    url('lato-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('lato-regular-webfont.woff2') format('woff2'),
+    url('lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('ubuntu-l-webfont.woff2') format('woff2'),
+    url('ubuntu-l-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('ubuntu-r-webfont.woff2') format('woff2'),
+    url('ubuntu-r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('ubuntu-m-webfont.woff2') format('woff2'),
+         url('ubuntu-m-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
