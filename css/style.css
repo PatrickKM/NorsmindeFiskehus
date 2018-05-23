@@ -95,6 +95,36 @@ nav a.active {
     left: 55%;
 }
 
+/* Content - om_os.html */
+.historie {
+    margin: 25px;
+    padding: 25px;
+    background-color: #003758;
+    color: white;
+    font-family: 'latolight', sans-serif;
+}
+
+.historie h1 {
+    color: #003758;
+    position: relative;
+    bottom: 75px;
+    font-family: 'ubunturegular', sans-serif;
+    font-size: 32px;
+}
+
+.historie p {
+    width: 50%;
+    position: relative;
+    top: 50px;
+}
+
+.historie img {
+    width: 45%;
+    position: relative;
+    bottom: 60px;
+    left: 54%;
+}
+
 /* Content - kontakt.html */
 
 .kontakt {
@@ -108,8 +138,8 @@ nav a.active {
 }
 
 .findos {
-    position: absolute;
-    bottom: 455px;
+    position: relative;
+    bottom: 520px;
     width: 30%;
     font-family: 'latolight', sans-serif;
     color: #003758;
@@ -188,7 +218,6 @@ input[type=submit]:hover {
     display: inline-block;
     list-style-type: none;
     margin: 0px 30px;
-    font-family: 
 }
 
 .tidspunkter {
@@ -205,7 +234,49 @@ input[type=submit]:hover {
 }
 
 .mapheight {
-    height: 565px;
+    height: 365px;
+}
+
+/* Aside - om_os.html */
+.hvemervi {
+    margin: 0px 50px;
+    font-family: 'ubunturegular', sans-serif;
+    color: #003758;
+    
+}
+.hvemervi h1 {
+    margin: 0 0 25px 0;
+    font-size: 32px;
+}
+
+.hvemervi img {
+    width: 50%
+}
+
+.hvemervicolumn {
+    float: left;
+    width: 48%;
+    padding: 5px;
+    text-align: center;
+    font-family: 'latolight', sans-serif;
+    color: #003758;
+}
+
+.hvemervicolumn b {
+    font-family: 'latomedium', sans-serif;
+}
+
+.hvemervirow p {
+    width: 40%;
+    position: relative;
+    left: 30%;
+}
+
+/* Clearfix (clear floats) */
+.hvemervirow::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* GRID Galleri */
@@ -218,6 +289,43 @@ input[type=submit]:hover {
 .grid-gallery img {
     width: 33%;
     margin: 5px 0px;
+}
+
+/* Værdier & Mission - om_os.html */
+.valuesmission {
+    background-color: #C0D7EF;
+    color: white;
+    font-family: 'latomedium', sans-serif;
+    padding: 50px;
+    position: absolute;
+    top: 1250px;
+    height: 420px;
+}
+
+.valuesmission p {
+    width: 70%;
+    position: relative;
+    left: 32%;
+    font-family: 'latolight', sans-serif;
+    font-size: 24px;
+}
+
+.valuesmission h3 {
+    font-size: 26px;
+    margin: 0 0 10px 0;
+}
+
+.valuesmission span {
+    position: relative;
+    top: 10px;
+    left: 86%;
+    font-family: 'latolight', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.vmheight {
+    height: 320px;
 }
 
 /* GRID Footer */
