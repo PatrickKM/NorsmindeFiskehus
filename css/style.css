@@ -310,7 +310,7 @@ input[type=submit]:hover {
 
 #map {
     width: 100%;
-    height: 750px;
+    height: 800px;
     position: absolute;
     top: 860px;
 }
@@ -380,10 +380,10 @@ input[type=submit]:hover {
     background-color: #C0D7EF;
     color: white;
     font-family: 'latomedium', sans-serif;
-    padding: 50px;
-    position: absolute;
-    top: 1250px;
-    height: 420px;
+    padding: 50px 50px 250px 50px;
+    position: relative;
+    top: 200px;
+    height: 60%;
 }
 
 .valuesmission p {
@@ -406,10 +406,6 @@ input[type=submit]:hover {
     font-family: 'latolight', sans-serif;
     font-style: italic;
     font-size: 24px;
-}
-
-.vmheight {
-    height: 320px;
 }
 
 /* GRID Footer */
@@ -454,6 +450,7 @@ footer ul {
     clear: both;
     display: table;
 }
+
 .waterwave {
     background-color: #C0D7EF;
     padding: 100px 0px;
