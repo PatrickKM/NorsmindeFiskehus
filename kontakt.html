@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 
-    <title>Norsminde Fiskehus - Forside</title>
+    <title>Norsminde Fiskehus - Kontakt</title>
     <meta name="description" content="Norsminde Fiskehusets hjemmeside, find kontaktoplysninger, adresse samt åbningstider. Ugens tilbud, menukort og salg af fisk">
 </head>
 
 <body>
+
+    <!-- NAV - Menubar -->
     <div class="gridwrapper">
         <header>
             <nav class="grid-nav">
@@ -27,8 +29,8 @@
             </nav>
         </header>
 
+        <!-- Content - Kontaktinformation + Kontaktformular -->
         <section class=grid-content>
-
             <div class="kontakt">
                 <div class="kontaktform">
                     <form action="action_page.php">
@@ -59,34 +61,37 @@
                 </div>
             </div>
         </section>
-        
+
+        <!-- Aside - Google Maps -->
         <aside class="grid-aside">
             <div class="mapheight"></div>
         </aside>
-        <div id="map"></div> 
-        
+        <div id="map"></div>
+
+        <!-- Footer -->
         <footer class="grid-footer">
-            <div class="waterwave">
+            <div class="kontakt_ikon">
                 <h3>Kontakt</h3>
                 <ul>
-                    <li><a href="tel:25555203"><img src="#">+45 25 55 52 03</a></li>
-                    <li><a href="mailto:kontakt@norsmindefiskehus.dk"><img src="#">kontakt@norsmindefiskehus.dk</a></li>
-                    <li><img src="#">Gl. Krovej 104, 8300 Odder</li>
+                    <li><a href="tel:25555203"><img src="images/kontakt_ikoner/icon_telefon.png">+45 25 55 52 03</a></li>
+                    <li><a href="mailto:kontakt@norsmindefiskehus.dk"><img src="images/kontakt_ikoner/icon_mail.png">kontakt@norsmindefiskehus.dk</a></li>
+                    <li><img src="images/kontakt_ikoner/icon_adresse.png">Gl. Krovej 104, 8300 Odder</li>
                 </ul>
             </div>
 
             <div class="payment">
-                <img src="images/Dankort_Logo.png" alt="Dankort Logo" width="50px">
-                <img src="images/MobilePay_Logo.png" alt="MobilePay Logo" width="60px">
+                <div class="payment_align"><img src="images/betalingsmetoder/dankort_logo.png" alt="Dankort Logo">
+                </div>
+                <div class="payment_align"><img src="images/betalingsmetoder/mobilepay_logo.png" alt="MobilePay Logo">
+                </div>
             </div>
-
         </footer>
     </div>
 
     <script>
         function myMap() {
             var mapOptions = {
-                center: new google.maps.LatLng(56.022600,10.262500),
+                center: new google.maps.LatLng(56.022600, 10.262500),
                 zoom: 17,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             }

@@ -5,82 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <meta name="author" content="Heidi Callesen, Johan Nybro Nielsen, Milla Anushree Nielsen, Patrick Koo Madsen">
+    <meta name="author" content="Heidi Callesen, Johan Nybro Nielsen, Milla Arushnee Nielsen, Patrick Koo Madsen">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
 
     <title>Norsminde Fiskehus - Forside</title>
     <meta name="description" content="Norsminde Fiskehusets hjemmeside, find kontaktoplysninger, adresse samt åbningstider. Ugens tilbud, menukort og salg af fisk">
 </head>
 
 <body>
-
-
-
-    <!-- Menubar -->
+    <!-- NAV - Menubar -->
     <div class="gridwrapper">
         <header class="grid-header">
             <nav class="grid-nav">
                 <a href="#">Menu</a>
-                <a href="#">Opskrifter</a>
-                <a href="#"><img src="" alt="Norsminde Fiskehusets Logo"></a>
-                <a href="#">Om Os</a>
-                <a href="#">Kontakt</a>
+                <a href="opskrifter.html" class="active">Opskrifter</a>
+                <a href="index.html" class="nohover"><img src="images/norsminde_fiskehus_logo.png" alt="Norsminde Fiskehusets Logo" width="150px"></a>
+                <a href="om_os.html">Om Os</a>
+                <a href="kontakt.html">Kontakt</a>
             </nav>
         </header>
 
-
-        <!-- opskrifter -->
-        <section class="grid-opskrift1">
-            <div>
-                <img src="images/lettunsalat.jpg" alt="lettunsalat">
+        <!-- Content - Opskrifter -->
+        <section class="grid-content">
+        </section>
+        <div class="opskrift">
+            <div class="opskrift_pos1">
+                <a href="images/opskrifter/lettunsalat.jpg" data-lightbox="lettunsalat.jpg" data-title="
+                
+<b>Ingredienser</b> (til 3 personer)
+<br>
+1 spsk. Creme fraiche 18%
+ <br>
+2 spsk. Mayonnaise
+ <br>
+1 ds. Tun i vand, konserves
+<br>
+25 gram Majs, konserves
+<br>
+25 gram Grønne ærter, dybfrost
+<br>
+25 gram Rød peberfrugt
+<br>
+Salt
+<br>
+Peber
+<br><br>
+1. Bland creme fraiche og mayonnaise i en skål. 
+<br>
+2. Hæld vandet fra tunen og balnd den i dressingen, mens du moser den fint. 
+<br>
+3. Bland ærter, majs og peberfrugt i tern og smag til med salt og peber.
+<br>
+Smager godt på rugbrød eller flutes.">
+               <img src="images/opskrifter/lettunsalat.jpg" alt="Billede af en let tunsalat"></a>
                 <h2>Let tunsalat!</h2>
-
             </div>
-        </section>
 
-        <section class="grid-opskrift2">
-            <div>
-                <img src="images/stjerneskud.jpg" alt="stjerneskud">
+            <div class="opskrift_pos2">
+                <a href="images/opskrifter/stjerneskud.jpg" data-lightbox="stjerneskud.jpg">
+                <img src="images/opskrifter/stjerneskud.jpg" alt="Billede af stjerneskud"></a>
                 <h2>Stjerneskud!</h2>
-
             </div>
-        </section>
-        <section class="grid-opskrift3">
-            <div>
-                <img src="images/r%C3%B8getlaks.jpg" alt="røgetlaks">
+
+            <div class="opskrift_pos3">
+                <a href="images/opskrifter/roogetlaks.jpg" data-lightbox="roogetlaks.jpg">
+                <img src="images/opskrifter/roogetlaks.jpg" alt="Billede af Røgetlaks"></a>
                 <h2>Røgetlaks!</h2>
-
             </div>
-        </section>
+        </div>
 
 
-
-        <!-- footer -->
+        <!-- Footer -->
         <footer class="grid-footer">
-            <div>
+            <div class="kontakt_ikon">
                 <h3>Kontakt</h3>
                 <ul>
-                    <li><a href="tel:25555203"><img src="#">+45 25 55 52 03</a></li>
-                    <li><a href="mailto:kontakt@norsmindefiskehus.dk"><img src="#">kontakt@norsmindefiskehus.dk</a></li>
-                    <li><img src="#">Gl. Krovej 104, 8300 Odder</li>
+                    <li><a href="tel:25555203"><img src="images/kontakt_ikoner/icon_telefon.png">+45 25 55 52 03</a></li>
+                    <li><a href="mailto:kontakt@norsmindefiskehus.dk"><img src="images/kontakt_ikoner/icon_mail.png">kontakt@norsmindefiskehus.dk</a></li>
+                    <li><img src="images/kontakt_ikoner/icon_adresse.png">Gl. Krovej 104, 8300 Odder</li>
                 </ul>
             </div>
 
-            <div>
-                <ul>
-                    <li><img src="images/Dankort_Logo.png" alt="Dankort Logo" width="50px"></li>
-                    <li><img src="images/MobilePay_Logo.png" alt="MobilePay Logo" width="60px"></li>
-                </ul>
+            <div class="payment">
+                <div class="payment_align"><img src="images/betalingsmetoder/dankort_logo.png" alt="Dankort Logo">
+                </div>
+                <div class="payment_align"><img src="images/betalingsmetoder/mobilepay_logo.png" alt="MobilePay Logo">
+                </div>
             </div>
-
         </footer>
+        <div class="waterwave"></div>
     </div>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
 
 </body>
 
 </html>
-

@@ -28,6 +28,7 @@ body {
 }
 
 /* GRID Nav */
+
 .grid-nav {
     grid-area: navgrid;
     text-align: center;
@@ -90,12 +91,13 @@ nav a.active {
     margin: 3% 0 5% 0;
     font-family: 'latolight', sans-serif;
     width: 40%;
-    position:relative;
+    position: relative;
     bottom: 175px;
     left: 55%;
 }
 
 /* Content - om_os.html */
+
 .historie {
     margin: 25px;
     padding: 25px;
@@ -146,8 +148,12 @@ nav a.active {
 }
 
 /* Kontaktform fundet via. w3schools, videreudviklet af os */
+
 /* https://www.w3schools.com/howto/howto_css_contact_form.asp */
-input[type=text], select, textarea {
+
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -183,6 +189,79 @@ input[type=submit]:hover {
     left: 48%;
 }
 
+/* Content - opskrifter.html */
+
+.opskrift {
+    background-color: #C0D7EF;
+    position: relative;
+    padding: 50px;
+    height: 800px;
+    font-family: 'latomedium', sans-serif;
+    color: #003758;
+}
+
+.opskrift_pos1 {
+    position: absolute;
+    right: 55%;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+}
+
+.opskrift_pos1 img {
+    width: 350px;
+}
+
+.opskrift_pos2 {
+    position: absolute;
+    left: 55%;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+}
+
+.opskrift_pos2 img {
+    width: 350px;
+}
+
+.opskrift_pos3 {
+    position: absolute;
+    left: 35%;
+    bottom: 5%;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+}
+
+.opskrift_pos3 img {
+    width: 500px;
+
+}
+
+.lb-data .lb-caption {
+    font-size: 20px;
+    color: #003758;
+    padding: 5px;
+    width: 500px;
+    font-family: 'latolight', sans-serif;
+    line-height: 35px;
+}
+
+.lb-data .lb-caption b {
+    font-family: 'latomedium', sans-serif;
+}
+
+.lb-details {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lb-data .lb-details {
+    width: 98%;
+}
+
+.lb-image img {
+    width: 25%;
+}
+
 /* GRID Aside */
 
 .grid-aside {
@@ -190,6 +269,7 @@ input[type=submit]:hover {
 }
 
 /* Aside - index.html */
+
 .asidecontent {
     text-align: center;
     padding: 40px 0px;
@@ -225,7 +305,9 @@ input[type=submit]:hover {
 }
 
 /* Aside - Kontakt.html */
+
 /* Google Maps */
+
 #map {
     width: 100%;
     height: 750px;
@@ -238,12 +320,14 @@ input[type=submit]:hover {
 }
 
 /* Aside - om_os.html */
+
 .hvemervi {
     margin: 0px 50px;
     font-family: 'ubunturegular', sans-serif;
     color: #003758;
-    
+
 }
+
 .hvemervi h1 {
     margin: 0 0 25px 0;
     font-size: 32px;
@@ -272,7 +356,6 @@ input[type=submit]:hover {
     left: 30%;
 }
 
-/* Clearfix (clear floats) */
 .hvemervirow::after {
     content: "";
     clear: both;
@@ -292,6 +375,7 @@ input[type=submit]:hover {
 }
 
 /* Værdier & Mission - om_os.html */
+
 .valuesmission {
     background-color: #C0D7EF;
     color: white;
@@ -338,20 +422,44 @@ input[type=submit]:hover {
     position: relative;
 }
 
+.kontakt_ikon img {
+    width: 2%;
+}
+
 footer * {
     overflow: hidden;
     text-decoration: none;
     font-family: 'latolight', sans-serif;
     color: white;
-    
+    vertical-align: middle;
 }
 
 footer ul {
     list-style-type: none;
-    text-align: left;  
+    text-align: left;
 }
 
-.payment img {
+.payment_align img {
+    width: 90%;
+}
+
+.payment_align {
     display: inline-block;
-    vertical-align: middle;
+    width: 5%;
+    padding: 5px;
+}
+
+.payment::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.waterwave {
+    background-color: #C0D7EF;
+    padding: 100px 0px;
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    top: 80vh;
+    z-index: -10;
 }
