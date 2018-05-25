@@ -218,7 +218,7 @@ nav a.active {
 .historie h1 {
     position: relative;
     font-family: 'ubunturegular', sans-serif;
-    font-size: 32px;
+    font-size: 50px;
 }
 
 .historie p {
@@ -258,7 +258,7 @@ nav a.active {
 }
 
 .findos h2 {
-    font-size: 32px;
+    font-size: 50px;
 }
 
 /* Kontaktform fundet via. w3schools, videreudviklet af os */
@@ -305,8 +305,8 @@ input[type=submit]:hover {
 
 .kontaktform h3 {
     font-family: 'ubunturegular', sans-serif;
-    font-size: 32px;
-    width: 75%;
+    font-size: 35px;
+    width: 100%;
     color: #003758;
 }
 
@@ -322,38 +322,18 @@ input[type=submit]:hover {
 }
 
 .opskrift_pos1 {
-    position: absolute;
+    width: 450px;
     right: 55%;
     background-color: white;
     padding: 10px 10px 20px 10px;
+    margin: 20px;
+    float: left;
+    position: relative;
+    left: 12%;
 }
 
 .opskrift_pos1 img {
-    width: 350px;
-}
-
-.opskrift_pos2 {
-    position: absolute;
-    left: 55%;
-    background-color: white;
-    padding: 10px 10px 20px 10px;
-}
-
-.opskrift_pos2 img {
-    width: 350px;
-}
-
-.opskrift_pos3 {
-    position: absolute;
-    left: 35%;
-    bottom: 20%;
-    background-color: white;
-    padding: 10px 10px 20px 10px;
-}
-
-.opskrift_pos3 img {
-    width: 500px;
-
+    width: 450px;
 }
 
 .lb-data .lb-caption {
@@ -454,7 +434,7 @@ input[type=submit]:hover {
 
 .hvemervi h1 {
     margin: 0 0 25px 0;
-    font-size: 32px;
+    font-size: 50px;
 }
 
 .hvemervi img {
@@ -478,6 +458,7 @@ input[type=submit]:hover {
     width: 40%;
     position: relative;
     left: 30%;
+    font-size: 26px;
 }
 
 .hvemervirow::after {
