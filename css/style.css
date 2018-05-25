@@ -32,7 +32,7 @@ body {
 .grid-nav {
     grid-area: navgrid;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* NAV */
@@ -83,16 +83,19 @@ nav a.active {
 
 .content h2 {
     text-align: center;
+    font-size: 70px;
+    color: #003758;
     padding: 10px 0 10px 0;
     font-family: 'ubuntumedium', sans-serif;
 }
 
 .content p {
-    margin: 3% 0 5% 0;
     font-family: 'latolight', sans-serif;
+    font-size: 26px;
+    color: #003758;
     width: 40%;
     position: relative;
-    bottom: 175px;
+    bottom: 17vh;
     left: 55%;
 }
 
@@ -356,9 +359,10 @@ input[type=submit]:hover {
 }
 
 .asidecontent h3 {
-    padding: 0px 0 5px 0;
+    padding: 25px 0 5px 0;
     font-family: 'ubunturegular', sans-serif;
-    font-size: 50px;
+    font-size: 70px;
+    letter-spacing: 7px;
 }
 
 .asidecontent p {
@@ -369,12 +373,14 @@ input[type=submit]:hover {
     padding-top: 5px;
     border-top: 1px solid white;
     font-family: 'latolight', sans-serif;
+    font-size: 32px;
 }
 
 .asidecontent ul {
     display: inline-block;
     list-style-type: none;
-    margin: 0px 30px;
+    margin: 0px 30px 50px 30px;
+    font-size: 30px;
 }
 
 .tidspunkter {
