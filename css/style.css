@@ -129,21 +129,37 @@ nav a.active {
 
 .menu-section {
     margin-bottom: 80px;
+    margin-top: 15px;
 }
 
 .menu-section-title {
     font-family: 'chalk_dashregular', sans-serif;
-    font-size: 50px;
+    font-size: 100px;
     display: block;
     font-weight: normal;
     margin: 70px 0 10px 0;
     text-align: Center;
     color: white;
+    letter-spacing: 7px;
 }
 
 .menu-item {
     margin: 5px 0;
     font-size: 18px;
+}
+
+#menu-undertekst{
+    font-family:'kg_ten_thousand_reasonsRg', sans-serif;
+    color: #A01B09;
+    font-size: 20px;
+    width: 230px;
+    height: 80px;
+    -ma transform: rotate(15deg);
+    -webkit-transform:rotate(15deg);
+    transform: rotate(-15deg);
+    position: relative;
+    bottom: 40px;
+    left: 1020px;
 }
 
 .menu-item-name {
