@@ -154,12 +154,12 @@ nav a.active {
     font-size: 20px;
     width: 230px;
     height: 80px;
-    -ma transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
     -webkit-transform:rotate(15deg);
     transform: rotate(-15deg);
     position: relative;
-    bottom: 40px;
-    left: 1020px;
+    bottom: 3%;
+    left: 70%;
 }
 
 .menu-item-name {
@@ -212,12 +212,11 @@ nav a.active {
     background-color: #003758;
     color: white;
     font-family: 'latolight', sans-serif;
+    height: 600px;
 }
 
 .historie h1 {
-    color: #003758;
     position: relative;
-    bottom: 75px;
     font-family: 'ubunturegular', sans-serif;
     font-size: 32px;
 }
@@ -226,13 +225,14 @@ nav a.active {
     width: 50%;
     position: relative;
     top: 50px;
+    font-size: 26px;
 }
 
 .historie img {
-    width: 45%;
+    width: 35%;
     position: relative;
-    bottom: 60px;
-    left: 54%;
+    bottom: 135px;
+    left: 60%;
 }
 
 /* Content - kontakt.html */
@@ -240,6 +240,7 @@ nav a.active {
 .kontakt {
     background-color: #C0D7EF;
     padding: 75px 100px;
+    height: 720px;
 }
 
 .kontakt h2 {
@@ -248,11 +249,16 @@ nav a.active {
 }
 
 .findos {
-    position: relative;
-    bottom: 520px;
+    position: absolute;
+    bottom: 460px;
     width: 30%;
     font-family: 'latolight', sans-serif;
     color: #003758;
+    font-size: 24px;
+}
+
+.findos h2 {
+    font-size: 32px;
 }
 
 /* Kontaktform fundet via. w3schools, videreudviklet af os */
@@ -295,6 +301,13 @@ input[type=submit]:hover {
     position: relative;
     width: 50%;
     left: 48%;
+}
+
+.kontaktform h3 {
+    font-family: 'ubunturegular', sans-serif;
+    font-size: 32px;
+    width: 75%;
+    color: #003758;
 }
 
 /* Content - opskrifter.html */
@@ -421,13 +434,13 @@ input[type=submit]:hover {
 
 #map {
     width: 100%;
-    height: 800px;
+    height: 700px;
     position: absolute;
-    top: 1000px;
+    top: 1100px;
 }
 
 .mapheight {
-    height: 365px;
+    height: 425px;
 }
 
 /* Aside - om_os.html */
