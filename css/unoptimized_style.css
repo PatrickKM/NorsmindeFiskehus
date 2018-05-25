@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* GRID */
+
+.gridwrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "headergrid" "navgrid" "contentgrid" "asidegrid" "gallerygrid" "footergrid";
+}
+
+/* GRID Header */
+
+.grid-header {
+    grid-area: headergrid;
+}
+
+.forsidebillede img {
+    width: 100%;
+}
+
+/* GRID Nav */
+
+.grid-nav {
+    grid-area: navgrid;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid-nav img {
+    width: 350px;
+}
+
+/* NAV */
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #003758;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-family: 'ubuntulight', sans-serif;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #003758;
+}
+
+nav a.nohover {
+    border-bottom: 0px solid #003758;
+}
+
+nav a.active {
+    font-family: 'ubuntumedium', sans-serif;
+}
+
+
+/* GRID Content */
+
+.grid-content {
+    grid-area: contentgrid;
+    margin: 0px;
+}
+
+/* Content - index.html */
+
+.content {
+    height: 350px;
+}
+
+.content img {
+    width: 40%;
+    position: relative;
+    left: 5%;
+    top: 50px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 70px;
+    color: #003758;
+    padding: 40px 0 10px 0;
+    font-family: 'ubuntumedium', sans-serif;
+}
+
+.ugens-fisk_content {
+    font-family: 'latolight', sans-serif;
+    font-size: 30px;
+    color: #003758;
+    width: 40%;
+    position: relative;
+    bottom: 25%;
+    left: 55%;
+}
+
+.ugens-fisk_content b {
+    font-family: 'latomedium', sans-serif;
+}
+
+/* Content - menu.html */
+.chalkboard {
+    background-image: url(../images/menu/chalkboard.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 1250px;
+    margin: 0 50px 0 50px;
+}
+
+.menu-body {
+    max-width: 40%;
+    margin: 0px 75px;
+    display: block;
+    color: white;
+}
+
+.menu-section {
+    margin-bottom: 80px;
+    margin-top: 15px;
+}
+
+.menu-section-title {
+    font-family: 'chalk_dashregular', sans-serif;
+    font-size: 100px;
+    display: block;
+    font-weight: normal;
+    margin: 70px 0 10px 0;
+    text-align: Center;
+    color: white;
+    letter-spacing: 7px;
+}
+
+.menu-item {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#menu-undertekst{
+    font-family:'kg_ten_thousand_reasonsRg', sans-serif;
+    color: #A01B09;
+    font-size: 20px;
+    width: 230px;
+    height: 80px;
+    -ms-transform: rotate(15deg);
+    -webkit-transform:rotate(15deg);
+    transform: rotate(-15deg);
+    position: relative;
+    bottom: 3%;
+    left: 70%;
+}
+
+.menu-item-name {
+    font-family: 'kg_ten_thousand_reasonsRg', sans-serif;
+}
+
+.menu-item-description {
+    font-style: italic;
+    font-family: 'kg_ten_thousand_reasonsRg', sans-serif;
+    font-size: .9em;
+    line-height: 1.5em;
+    margin: 5px 0;
+}
+
+.menu-item-price {
+    float: right;
+    font-family: 'kg_ten_thousand_reasonsRg', sans-serif;
+    margin-top: -30px;
+}
+
+.drikkevarer {
+    position: relative;
+    bottom: 28%;
+}
+
+.menufloat {
+    position: relative;
+    bottom: 357px;
+    left: 50%;
+    max-width: 40%;
+    margin: 0px 75px;
+    display: block;
+    color: white;
+}
+
+.menufloat2 {
+    position: relative;
+    bottom: 485px;
+    left: 50%;
+    max-width: 40%;
+    margin: 0px 75px;
+    display: block;
+    color: white;
+}
+
+/* Content - om_os.html */
+
+.historie {
+    margin: 25px;
+    padding: 25px;
+    background-color: #003758;
+    color: white;
+    font-family: 'latolight', sans-serif;
+    height: 600px;
+}
+
+.historie h1 {
+    position: relative;
+    font-family: 'ubunturegular', sans-serif;
+    font-size: 50px;
+}
+
+.historie p {
+    width: 50%;
+    position: relative;
+    top: 50px;
+    font-size: 26px;
+}
+
+.historie img {
+    width: 35%;
+    position: relative;
+    bottom: 135px;
+    left: 60%;
+}
+
+/* Content - kontakt.html */
+
+.kontakt {
+    background-color: #C0D7EF;
+    padding: 75px 100px;
+    height: 720px;
+}
+
+.kontakt h2 {
+    margin: 0px 0px 50px 0px;
+    font-family: 'ubunturegular', sans-serif;
+}
+
+.findos {
+    position: absolute;
+    bottom: 350px;
+    width: 30%;
+    font-family: 'latolight', sans-serif;
+    color: #003758;
+    font-size: 24px;
+}
+
+.findos h2 {
+    font-size: 50px;
+}
+
+/* Kontaktform fundet via. w3schools, videreudviklet af os */
+
+/* https://www.w3schools.com/howto/howto_css_contact_form.asp */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:none;
+}
+
+input[type=submit] {
+    background-color: #003758;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'latomedium', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #075db7;
+}
+
+.kontaktform {
+    border-radius: 5px;
+    background-color: #C0D7EF;
+    padding: 20px;
+    font-family: 'latoregular', sans-serif;
+    color: #003758;
+    position: relative;
+    width: 50%;
+    left: 48%;
+}
+
+.kontaktform h3 {
+    font-family: 'ubunturegular', sans-serif;
+    font-size: 35px;
+    width: 100%;
+    color: #003758;
+}
+
+/* Content - opskrifter.html */
+
+.opskrift {
+    background-color: #C0D7EF;
+    position: relative;
+    padding: 50px 50px 250px 50px;
+    height: 800px;
+    font-family: 'latomedium', sans-serif;
+    color: #003758;
+}
+
+.opskrift_pos1 {
+    width: 450px;
+    right: 55%;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+    margin: 20px;
+    float: left;
+    position: relative;
+    left: 12%;
+}
+
+.opskrift_pos1 img {
+    width: 450px;
+}
+
+.lb-data .lb-caption {
+    font-size: 20px;
+    color: #003758;
+    padding: 5px;
+    width: 500px;
+    font-family: 'latolight', sans-serif;
+    line-height: 35px;
+}
+
+.lb-data .lb-caption b {
+    font-family: 'latomedium', sans-serif;
+}
+
+.lb-details {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.lb-data .lb-details {
+    width: 98%;
+}
+
+.lb-image img {
+    width: 25%;
+}
+
+/* GRID Aside */
+
+.grid-aside {
+    grid-area: asidegrid;
+}
+
+/* Aside - index.html */
+
+.asidecontent {
+    text-align: center;
+    padding: 40px 0px;
+    background-color: #C0D7EF;
+    font-family: 'latoregular', sans-serif;
+    color: white;
+}
+
+.asidecontent h3 {
+    padding: 25px 0 5px 0;
+    font-family: 'ubunturegular', sans-serif;
+    font-size: 70px;
+    letter-spacing: 7px;
+}
+
+.asidecontent p {
+    content: "";
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 32%;
+    padding-top: 5px;
+    border-top: 1px solid white;
+    font-family: 'latolight', sans-serif;
+    font-size: 32px;
+}
+
+.asidecontent ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 30px 50px 30px;
+    font-size: 30px;
+}
+
+.tidspunkter {
+    font-family: 'latolight';
+}
+
+/* Aside - Kontakt.html */
+
+/* Google Maps */
+
+#map {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 1100px;
+}
+
+.mapheight {
+    height: 425px;
+}
+
+/* Aside - om_os.html */
+
+.hvemervi {
+    margin: 0px 50px;
+    font-family: 'ubunturegular', sans-serif;
+    color: #003758;
+    position: relative;
+    top: 150px;
+}
+
+.hvemervi h1 {
+    margin: 0 0 25px 0;
+    font-size: 50px;
+}
+
+.hvemervi img {
+    width: 50%
+}
+
+.hvemervicolumn {
+    float: left;
+    width: 48%;
+    padding: 5px;
+    text-align: center;
+    font-family: 'latolight', sans-serif;
+    color: #003758;
+    margin: 0 0 0 1%;
+}
+
+.hvemervicolumn b {
+    font-family: 'latomedium', sans-serif;
+}
+
+.hvemervirow p {
+    width: 40%;
+    position: relative;
+    left: 30%;
+    font-size: 26px;
+}
+
+.hvemervirow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Aside - Salg af fisk - menu.html */
+.salg_af_fisk {
+    background-color: #C0D7EF;
+    color: white;
+    font-family: 'latomedium', sans-serif;
+    padding: 50px 50px 350px 50px;
+    position: relative;
+    top: 225px;
+    height: 550px;
+}
+
+.salg_fisk {
+    font-family: 'latomedium', sans-serif;
+    font-size: 24px;
+    width: 75%;
+    position: relative;
+    left: 15%;
+}
+
+.salg_pris {
+    font-family: 'latomedium', sans-serif;
+    font-size: 24px;
+    width: 5%;
+    position: relative;
+    left: 75%;
+    bottom: 260px;
+}
+
+.salg_info {
+    width: 30%;
+    position: relative;
+    bottom: 3%;
+    font-family: 'latolight', sans-serif;
+    font-size: 18px;
+}
+
+
+.salg_af_fisk h3 {
+    font-size: 26px;
+    font-family: 'ubuntulight', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.salg_af_fisk span {
+    position: relative;
+    top: 10px;
+    left: 86%;
+    font-family: 'latolight', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+/* GRID Galleri */
+
+.grid-gallery {
+    grid-area: gallerygrid;
+    float: left;
+}
+
+.grid-gallery img {
+    width: 33%;
+    margin: 5px 0px;
+}
+
+/* Værdier & Mission - om_os.html */
+
+.valuesmission {
+    background-color: #C0D7EF;
+    color: white;
+    font-family: 'latomedium', sans-serif;
+    padding: 50px 50px 250px 50px;
+    position: relative;
+    top: 20vh;
+    height: 500px;
+}
+
+.valuesmission p {
+    width: 65%;
+    position: relative;
+    left: 32%;
+    font-family: 'latolight', sans-serif;
+    font-size: 24px;
+}
+
+.valuesmission h3 {
+    font-size: 26px;
+    margin: 0 0 10px 0;
+}
+
+.valuesmission span {
+    position: relative;
+    top: 10px;
+    left: 86%;
+    font-family: 'latolight', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+/* GRID Footer */
+
+.grid-footer {
+    grid-area: footergrid;
+    padding: 8% 0px 0px 20px;
+    background-image: url(../images/waterwave.png);
+    background-size: 100% 100%;
+    position: relative;
+    top: 10px;
+}
+
+.kontakt_ikon img {
+    width: 4%;
+}
+
+footer * {
+    overflow: hidden;
+    text-decoration: none;
+    font-family: 'latolight', sans-serif;
+    color: white;
+    vertical-align: middle;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.payment_align img {
+    width: 90%;
+}
+
+.payment_align {
+    display: inline-block;
+    width: 3%;
+    padding: 5px;
+}
+
+.payment::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.waterwave {
+    background-color: #C0D7EF;
+    padding: 0px 0px 150px 0px;
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    top: 110vh;
+    z-index: -10;
+}
+
