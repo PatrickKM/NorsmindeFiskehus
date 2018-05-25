@@ -116,7 +116,7 @@ nav a.active {
     background-image: url(../images/menu/chalkboard.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 1150px;
+    height: 1250px;
     margin: 0 50px 0 50px;
 }
 
@@ -171,6 +171,7 @@ nav a.active {
     font-family: 'kg_ten_thousand_reasonsRg', sans-serif;
     font-size: .9em;
     line-height: 1.5em;
+    margin: 5px 0;
 }
 
 .menu-item-price {
@@ -250,7 +251,7 @@ nav a.active {
 
 .findos {
     position: absolute;
-    bottom: 460px;
+    bottom: 350px;
     width: 30%;
     font-family: 'latolight', sans-serif;
     color: #003758;
@@ -429,7 +430,8 @@ input[type=submit]:hover {
     margin: 0px 50px;
     font-family: 'ubunturegular', sans-serif;
     color: #003758;
-
+    position: relative;
+    top: 150px;
 }
 
 .hvemervi h1 {
@@ -448,6 +450,7 @@ input[type=submit]:hover {
     text-align: center;
     font-family: 'latolight', sans-serif;
     color: #003758;
+    margin: 0 0 0 1%;
 }
 
 .hvemervicolumn b {
