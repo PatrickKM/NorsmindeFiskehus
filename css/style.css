@@ -79,14 +79,11 @@ nav a.active {
 /* Content - index.html */
 
 .content {
-    height: 350px;
+    height: 250px;
 }
 
-.content img {
-    width: 40%;
-    position: relative;
-    left: 5%;
-    top: 50px;
+.ugensfisk_row img {
+    width: 50%;
 }
 
 .content h2 {
@@ -95,28 +92,40 @@ nav a.active {
     color: #003758;
     padding: 40px 0 10px 0;
     font-family: 'ubuntumedium', sans-serif;
+    border-bottom: 1px solid #003758;
+    width: 32%;
+    margin: 0 auto 20px auto;
 }
 
 .ugens-fisk_content {
     font-family: 'latolight', sans-serif;
     font-size: 30px;
     color: #003758;
-    width: 40%;
-    position: relative;
-    bottom: 25%;
-    left: 55%;
 }
 
 .ugens-fisk_content b {
     font-family: 'latomedium', sans-serif;
 }
 
+.ugensfisk_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 100px 0;
+}
+
+.ugensfisk_column {
+    flex: 10%;
+    align-self: center;
+}
+
+
 /* Content - menu.html */
+
 .chalkboard {
     background-image: url(../images/menu/chalkboard.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 1250px;
+    height: 1550px;
     margin: 0 50px 0 50px;
 }
 
@@ -148,22 +157,23 @@ nav a.active {
     font-size: 18px;
 }
 
-#menu-undertekst{
-    font-family:'kg_ten_thousand_reasonsRg', sans-serif;
-    color: #A01B09;
+#menu-undertekst {
+    font-family: 'kg_ten_thousand_reasonsRg', sans-serif;
+    color: #ff1e00;
     font-size: 20px;
     width: 230px;
     height: 80px;
     -ms-transform: rotate(15deg);
-    -webkit-transform:rotate(15deg);
+    -webkit-transform: rotate(15deg);
     transform: rotate(-15deg);
     position: relative;
-    bottom: 3%;
+    bottom: 2%;
     left: 70%;
 }
 
 .menu-item-name {
     font-family: 'kg_ten_thousand_reasonsRg', sans-serif;
+    font-size: 24px;
 }
 
 .menu-item-description {
@@ -178,6 +188,7 @@ nav a.active {
     float: right;
     font-family: 'kg_ten_thousand_reasonsRg', sans-serif;
     margin-top: -30px;
+    font-size: 24px;
 }
 
 .drikkevarer {
@@ -187,8 +198,8 @@ nav a.active {
 
 .menufloat {
     position: relative;
-    bottom: 357px;
-    left: 50%;
+    bottom: 457px;
+    left: 48%;
     max-width: 40%;
     margin: 0px 70px;
     display: block;
@@ -197,8 +208,8 @@ nav a.active {
 
 .menufloat2 {
     position: relative;
-    bottom: 485px;
-    left: 50%;
+    bottom: 585px;
+    left: 48%;
     max-width: 40%;
     margin: 0px 70px;
     display: block;
@@ -250,9 +261,7 @@ nav a.active {
 }
 
 .findos {
-    position: absolute;
-    bottom: 350px;
-    width: 30%;
+    width: 50%;
     font-family: 'latolight', sans-serif;
     color: #003758;
     font-size: 24px;
@@ -270,13 +279,13 @@ input[type=text],
 select,
 textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize:none;
+    resize: none;
 }
 
 input[type=submit] {
@@ -299,16 +308,21 @@ input[type=submit]:hover {
     padding: 20px;
     font-family: 'latoregular', sans-serif;
     color: #003758;
-    position: relative;
-    width: 50%;
-    left: 48%;
 }
 
 .kontaktform h3 {
     font-family: 'ubunturegular', sans-serif;
-    font-size: 35px;
+    font-size: 22px;
     width: 100%;
     color: #003758;
+}
+
+.findos_flexrow {
+    display: flex;
+}
+
+.findos_flexcolumn {
+    flex: 0%;
 }
 
 /* Content - opskrifter.html */
@@ -316,27 +330,26 @@ input[type=submit]:hover {
 .opskrift {
     background-color: #C0D7EF;
     position: relative;
-    padding: 50px 50px 250px 50px;
-    height: 800px;
+    padding: 50px 0px 350px 0px;
     font-family: 'latomedium', sans-serif;
     color: #003758;
+    display: flex;
+
 }
 
 .opskrift_pos1 {
-    width: 450px;
-    right: 55%;
     background-color: white;
     padding: 10px 10px 20px 10px;
     margin: 20px;
-    float: left;
-    position: relative;
-    left: 12%;
+    flex: 50%;
+    align-self: flex-start;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .opskrift_pos1 img {
-    width: 450px;
+    width: 100%;
 }
+
 
 .lb-data .lb-caption {
     font-size: 20px;
@@ -442,7 +455,7 @@ input[type=submit]:hover {
 
 .hvemervi img {
     width: 50%;
-    
+
 }
 
 .hvemervicolumn {
@@ -471,14 +484,15 @@ input[type=submit]:hover {
 }
 
 /* Aside - Salg af fisk - menu.html */
+
 .salg_af_fisk {
     background-color: #C0D7EF;
     color: white;
     font-family: 'latomedium', sans-serif;
     padding: 50px 50px 350px 50px;
     position: relative;
-    top: 225px;
-    height: 550px;
+    top: 100px;
+    height: 150px;
 }
 
 .salg_fisk {
@@ -540,10 +554,8 @@ input[type=submit]:hover {
     background-color: #C0D7EF;
     color: white;
     font-family: 'latomedium', sans-serif;
-    padding: 50px 50px 250px 50px;
-    position: relative;
-    top: 20vh;
-    height: 500px;
+    padding: 50px 50px 30px 50px;
+    margin: 250px 0 0 0;
 }
 
 .valuesmission p {
@@ -576,11 +588,15 @@ input[type=submit]:hover {
     background-image: url(../images/waterwave.png);
     background-size: 100% 100%;
     position: relative;
-    top: 10px;
+}
+
+.waterwave {
+    background-image: url(../images/waterwave2.png)
 }
 
 .kontakt_ikon img {
     width: 4%;
+    margin: 0 5px 0 0;
 }
 
 footer * {
@@ -594,31 +610,9 @@ footer * {
 footer ul {
     list-style-type: none;
     text-align: left;
+    margin: 5px 0px;
 }
 
-.payment_align img {
-    width: 90%;
+footer li {
+    margin: 7px 0px;
 }
-
-.payment_align {
-    display: inline-block;
-    width: 3%;
-    padding: 5px;
-}
-
-.payment::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.waterwave {
-    background-color: #C0D7EF;
-    padding: 0px 0px 150px 0px;
-    position: absolute;
-    height: 20%;
-    width: 100%;
-    bottom: -300px;
-    z-index: -10;
-}
-
