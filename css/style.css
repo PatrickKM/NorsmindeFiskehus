@@ -331,24 +331,66 @@ input[type=submit]:hover {
 .opskrift {
     background-color: #C0D7EF;
     position: relative;
-    padding: 50px 0px 350px 0px;
+    padding: 100px 20px 350px 20px;
     font-family: 'latomedium', sans-serif;
     color: #003758;
     display: flex;
+}
 
+.opskrift_overskrift {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    font-size: 50px;
 }
 
 .opskrift_pos1 {
     background-color: white;
-    padding: 10px 10px 20px 10px;
+    padding: 10px 10px 10px 10px;
     margin: 20px;
     flex: 50%;
     align-self: flex-start;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.opskrift_pos1 img {
+.container_opskrift {
+    position: relative;
+}
+
+.container_opskrift img {
     width: 100%;
+    margin: 10px auto;
+    align-self: center;
+}
+
+.overlay_opskrift {
+    position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container_opskrift:hover .overlay_opskrift {
+    opacity: 0.85;
+}
+
+.text_opskrift {
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    padding: 20px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'latolight', sans-serif;
 }
 
 
@@ -628,8 +670,6 @@ input[type=submit]:hover {
     left: 87%;
     width: 10%;
 }
-
-
 
 .waterwave {
     background-image: url(../images/waterwave2.png)
