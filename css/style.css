@@ -382,14 +382,14 @@ input[type=submit]:hover {
 
 .overlay_opskrift {
     position: absolute;
-  top: 0px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
 }
 
 .container_opskrift:hover .overlay_opskrift {
@@ -666,6 +666,7 @@ input[type=submit]:hover {
 }
 
 /* GRID Footer */
+
 .grid-footer {
     grid-area: footergrid;
     padding: 8% 0px 0px 20px;
