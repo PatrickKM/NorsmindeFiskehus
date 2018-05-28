@@ -16,6 +16,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "headergrid" "navgrid" "contentgrid" "asidegrid" "gallerygrid" "footergrid";
+    overflow-x: hidden;
 }
 
 /* GRID Header */
@@ -669,7 +670,7 @@ input[type=submit]:hover {
 
 .grid-footer {
     grid-area: footergrid;
-    padding: 100px 0px 0px 20px;
+    padding: 120px 0px 0px 20px;
     background-image: url(../images/waterwave.png);
     background-size: 100% 100%;
     z-index: 1;
@@ -752,10 +753,32 @@ footer li {
     margin: 7px 0px;
 }
 
-.facebook {
-    position: absolute;
-    bottom: 9%;
-    left: 93%;
+.container_footer {
+    display: flex;
+}
+
+.container_footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-half {
+    flex: 1;
+    margin: 0 0 10px 0;
+}
+
+.left-half img {
+    width: 10%;
+}
+
+.right-half {
+    flex: 1;
+    padding: 1rem;
+    text-align: right;
+    position: relative;
+    bottom: 0px;
+    right: 0%;
 }
 
 /* Animation - Arrow - forside - index.html */
