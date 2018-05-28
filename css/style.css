@@ -272,6 +272,8 @@ nav a.active {
     background-color: #C0D7EF;
     padding: 75px 100px;
     height: 720px;
+    position: relative;
+    bottom: 62px;
 }
 
 .kontakt h2 {
