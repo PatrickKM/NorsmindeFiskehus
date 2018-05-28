@@ -193,6 +193,8 @@ html.lb-disable-scrolling {
     -moz-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    position: relative;
+    left: 35%;
 }
 
 .lb-data .lb-close:hover {
