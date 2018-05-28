@@ -113,6 +113,7 @@ nav a.active {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 100px 0;
+    width: 95%;
 }
 
 .ugensfisk_column {
@@ -272,8 +273,6 @@ nav a.active {
     background-color: #C0D7EF;
     padding: 75px 100px;
     height: 720px;
-    position: relative;
-    bottom: 62px;
 }
 
 .kontakt h2 {
