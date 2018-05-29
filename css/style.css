@@ -356,6 +356,7 @@ input[type=submit]:hover {
     color: #003758;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .opskrift_overskrift {
@@ -368,12 +369,10 @@ input[type=submit]:hover {
 .opskrift_pos1 {
     background-color: white;
     padding: 10px 10px 10px 10px;
-    margin: 20px;
+    margin: 50px 10px 10px 10px;
     flex: 0 31%;
     align-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-    left: 15%;
 }
 
 .container_opskrift {
@@ -436,9 +435,7 @@ input[type=submit]:hover {
 }
 
 .lb-data .lb-details {
-    width: 165.5%;
-    position: relative;
-    right: 35%;
+    width: 97%;
 }
 
 /* GRID Aside */
