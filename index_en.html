@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <meta name="author" content="Heidi Callesen, Johan Nybro Nielsen, Milla Anushree Nielsen, Patrick Koo Madsen">
+    <meta name="author" content="Heidi Callesen, Johan Nybro Nielsen, Milla Arushnee Nielsen, Patrick Koo Madsen">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
 
-    <title>Norsminde Fiskehus - Forside</title>
+    <title>Norsminde Fishing House - Frontpage</title>
     <meta name="description" content="Norsminde Fiskehusets forside, ugens fisk, åbningstider, madgalleri">
 </head>
 
@@ -20,15 +20,15 @@
     <div class="gridwrapper">
         <header class="grid-header">
             <div class="lang">
-                <a href="index_en.html"><img src="images/sprog_ikoner/icon_en.png" alt="Sprog ikon for EN" class="sprog1"></a>
+                <a href="index.html"><img src="images/sprog_ikoner/icon_da.png" alt="Sprog ikon for DA" class="sprog1"></a>
                 <a href="index_de.html"><img src="images/sprog_ikoner/icon_de.png" alt="Sprog ikon for DE" class="sprog2"></a>
             </div>
             <nav class="grid-nav">
-                <a href="menu.html">Menu</a>
-                <a href="opskrifter.html">Opskrifter</a>
-                <a href="index.html" class="nohover"><img src="images/norsminde_fiskehus_logo.png" alt="Norsminde Fiskehusets Logo"></a>
-                <a href="om_os.html">Om os</a>
-                <a href="kontakt.html">Kontakt</a>
+                <a href="menu_en.html">Menu</a>
+                <a href="opskrifter_en.html">Recipes</a>
+                <a href="index_en.html" class="nohover"><img src="images/norsminde_fiskehus_logo.png" alt="Norsminde Fiskehusets Logo"></a>
+                <a href="om_os_en.html">About us</a>
+                <a href="kontakt_en.html">Contact</a>
             </nav>
         </header>
         <div class="arrow_height">
@@ -46,14 +46,14 @@
         <!-- Content - Ugens Fisk -->
         <section class="grid-content">
             <div class="content" id="hrefugens">
-                <h2>Ugens fisk!</h2>
+                <h2>Fish of the week!</h2>
             </div>
             <div class="ugensfisk_row">
                 <img src="images/ugens_fisk_grafik.png" alt="Billed af en tegnet fisk" class="ugensfisk_column">
-                <p class="ugens-fisk_content ugensfisk_column">Ugens fisk er en sprød fiskeburger med hjemmelavet remoulade.
-                    <br><br>Pris i DKK: Fiskebruger: <b>80,-</b>
-                    <br>Fiskeburger inkl. chips: <b>95,-</b>
-                    <br><br> <b>Ring og bestil</b> på 25 55 52 03, eller kom ned og nyd din burger på havnen med en kold fadøl.
+                <p class="ugens-fisk_content ugensfisk_column">This week's fish is a crispy fish burger with homemade remoulade.
+                    <br><br>Price in DKK: Fish Burger: <b>80,-</b>
+                    <br>Fish Burger incl. chips: <b>95,-</b>
+                    <br><br> <b>Call and order</b> at 25 55 52 03, or come by and enjoy your burger with a cold beer at the harbor
                 </p>
             </div>
         </section>
@@ -61,16 +61,16 @@
         <!-- Aside - Åbningstider -->
         <aside class="grid-aside">
             <div class="asidecontent">
-                <h3>Åbningstider</h3>
-                <p>Åbningstider kan variere</p>
+                <h3>Opening Hours</h3>
+                <p>Opening hours may vary</p>
                 <ul>
-                    <li>Mandag:</li>
-                    <li>Tirsdag:</li>
-                    <li>Onsdag:</li>
-                    <li>Torsdag:</li>
-                    <li>Fredag:</li>
-                    <li>Lørdag:</li>
-                    <li>Søndag:</li>
+                    <li>Monday:</li>
+                    <li>Tuesday:</li>
+                    <li>Wednesday:</li>
+                    <li>Thursday:</li>
+                    <li>Friday:</li>
+                    <li>Saturday:</li>
+                    <li>Sunday:</li>
                 </ul>
 
                 <ul class="tidspunkter">
@@ -90,19 +90,19 @@
             <div class="container">
                 <img src="images/madgalleri/madgalleri1.jpg" alt="Billede af en madplatte fra Norsminde Fiskehus">
                 <div class="overlay">
-                    <div class="text">Madplatte til 2</div>
+                    <div class="text">Fish plate for 2</div>
                 </div>
             </div>
             <div class="container">
                 <img src="images/madgalleri/madgalleri2.jpg" alt="Billede af en madplatte fra Norsminde Fiskehus">
                 <div class="overlay">
-                    <div class="text">Fiskefrikadeller</div>
+                    <div class="text">Fish Cakes</div>
                 </div>
             </div>
             <div class="container">
                 <img src="images/madgalleri/madgalleri3.jpg" alt="Billede af en madplatte fra Norsminde Fiskehus">
                 <div class="overlay">
-                    <div class="text">Fiskefilet</div>
+                    <div class="text">Fish Fillet</div>
                 </div>
             </div>
         </div>
@@ -121,6 +121,17 @@
             </div>
         </footer>
     </div>
+    <script>
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+    </script>
 </body>
 
 </html>
